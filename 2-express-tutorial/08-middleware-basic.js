@@ -32,7 +32,7 @@ app.get('/', logger, (req, res) => {
   res.send('Home');
 });
 
-app.get('/about', logger, (req, res) => {
+app.get('/about', logger, (req, res) => { // can replace logger with [logger,other2]
   res.send('About');
 });
 
