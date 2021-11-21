@@ -8,7 +8,7 @@ const TaskSchema = new mongoose.Schema({
     maxlength: [20, 'Name cannot be more than 20 characters.']
   }, completed: {
     type: Boolean,
-    default: false, // so don't want required even tho it seems okay to make it true
+    //default: false, // so don't want required even tho it seems okay to make it true
   },
 }); // ignores other fields from request body not in Schema
 
