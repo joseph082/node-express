@@ -3,6 +3,9 @@ const Task = require('../models/task');
 const getAllTasks = async (req, res) => {
   try {
     const tasks = await Task.find({}); // returns array of JSONs
+    // res.status(200).json({ tasks, amount: tasks.length });
+    // res.status(200).json({ status: 'success', data: { tasks, nBHits: tasks.length } });
+    // res.status(200).json({ success: true, data: { tasks, nBHits: tasks.length } });
     res.status(200).json({ tasks });
   } catch (error) {
     res.status(500).json({ msg: error }); // 500 but this is general server error
